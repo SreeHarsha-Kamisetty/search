@@ -20,6 +20,7 @@ export const products = pgTable('products', {
   popularityScore: integer('popularity_score').default(0),
   createdAt: timestamp('created_at').defaultNow(),
   updatedAt: timestamp('updated_at').defaultNow(),
+  imageUrl: text('image_url'),
 });
 
 export const searchIndex = pgTable(
